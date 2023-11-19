@@ -33,7 +33,7 @@ pipeline{
             }
         }
         }
-        stage('mohan')
+        stage('mohan'){
         steps{
             script{
                 for (int i=0; i<5;i++){
@@ -45,6 +45,7 @@ pipeline{
                     count++
                 }
             }
+        }
         }
     }
 }
