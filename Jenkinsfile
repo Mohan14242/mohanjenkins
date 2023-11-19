@@ -18,9 +18,11 @@ pipeline{
             }
         }
         stage('testting stage'){
+            steps{
             script{
                 echo "this is teh testing stagew"
                 echo "here are the unit and integrstion testes may heppaen evene the soanrrqube also happens"
+            }
             }
         }
     }
