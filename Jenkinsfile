@@ -11,7 +11,7 @@ pipeline{
         steps{
             sh '''
             touch chiru.txt
-            touch chiru.txt'''
+            '''
         }
     }
    }
