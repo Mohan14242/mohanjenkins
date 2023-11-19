@@ -11,9 +11,12 @@ pipeline{
     }
     stages{
         stage("mohan stage"){
-            steps{
-                echo "this is my age is ${params.mohan}"
-            }
+            script {
+                    def buildNumber = env.BUILD_NUMBER
+                    def jobName = env.JOB_NAME
+                    echo "Build Number: $buildNumber"
+                    echo "Job Name: $jobName"
+                }
         }
     }
    
