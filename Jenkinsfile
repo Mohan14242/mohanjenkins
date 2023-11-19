@@ -33,5 +33,18 @@ pipeline{
             }
         }
         }
+        stage('mohan')
+        steps{
+            script{
+                for (int i=0; i<5;i++){
+                    echo "this is gping to get tge ${i}"
+                }
+                def count=0
+                while (count<10){
+                    echo "cpunt ${count}"
+                    count++
+                }
+            }
+        }
     }
 }
