@@ -25,5 +25,12 @@ pipeline{
             }
             }
         }
+        stage('fucking stage')
+        steps{
+            script{
+                echo "this is the mohan"
+                echo " i am still vergin"
+            }
+        }
     }
 }
