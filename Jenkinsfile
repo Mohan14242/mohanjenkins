@@ -7,7 +7,15 @@ pipeline{
             mkdir harsha'''
         }
     }
+    stage('creating the file'){
+        steps{
+            sh '''
+            touch chiru.txt
+            touch chiru.txt'''
+        }
+    }
    }
+
 
    
    
